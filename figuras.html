@@ -7,7 +7,60 @@
     <title>Figuras geometricas</title>
 </head>
 <body>
-    <h1>Figuras geometricas</h1>
+    <header>
+        <h1>Figuras geometricas</h1>
+        <p>Este es el primer taller del curso practico de JS</p>
+    </header>
+
+    <section>
+        <h2>Calcula el area y el perimetro de un cuadrado</h2>
+        <form action="" id="formCuadrado">
+            <fieldset>
+                <label for="">Escribe cuando mide cada lado de tu cuadrado:</label>
+                <input type="number" id="lado" step="0.1">
+                <input type="submit" value="Calcular el perimetro" id="perimetroButton">
+                <input type="submit" value="Calcular el area" id="areaButton">
+                <br><br>
+                <label for="" id="resultadoCuadrado"></label>
+            </fieldset>
+        </form>
+
+        <h2>Calcula el perimetro y area de un triangulo</h2>
+        <form action="" id="formTriangulo">
+            <fieldset>
+                <label for="">Escribe cuanto mide el lado 1 del triangulo:</label>
+                <input type="number" id="lado1" step="0.1">
+                <br><br>
+                <label for="">Escribe cuanto mide el lado 2 del triangulo:</label>
+                <input type="number" id="lado2" step="0.1">
+                <br><br>
+                <label for="">Escribe cuanto mide la base del triangulo:</label>
+                <input type="number" id="base" step="0.1">
+                <br><br>
+                <label for="">Escribe cuanto mide la altura del triangulo:</label>
+                <input type="number" id="altura" step="0.1">
+                <br><br>
+                <button id="perimetroTrianguloButton">Calcular el perimetro</button>
+                <button id="areaTrianguloButton">Calcular el area</button>
+                <br><br>
+                <label for="" id="resultadoTriangulo"></label>
+            </fieldset>
+        </form>
+
+        <h2>Calcula el area y el perimetro de un cuadrado</h2>
+        <form action="" id="formCirculo">
+            <fieldset>
+                <label for="">Escribe cuando mide el radio del circulo:</label>
+                <input type="number" id="radio">
+                <button id="diametro">Calcular el diametro</button>
+                <button id="perimetroCirculoButton">Calcular el perimetro</button>
+                <button id="areaCirculoButton">Calcular el area</button>
+                <br><br>
+                <label for="" id="resultadoCirculo"></label>
+            </fieldset>
+        </form>
+    </section>
+
     <script src="figuras.js"></script>
 </body>
 </html>
