@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descuentos con cupones</title>
+</head>
+<body>
+    <h1>Este si sera un descuento con cupones</h1>
+    <section>
+        <form action="">
+            <fieldset>
+                <h2>Introduzca el monto y el cupon de descuento</h2>
+                <label for="monto">Ingrese el monto:</label>
+                <input type="number" id="monto" step="0.01">
+                <br><br>
+                <label for="cupon">Introduzca el cupon</label>
+                <input type="text" id="cupon">
+                <br><br>
+                <button onclick="calcularDescuento()" type="button"></button>
+                <h3 id="resultado"></h3>
+            </fieldset>
+        </form>
+    </section>
+</body>
+</html>
