@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descuento con cupones</title>
+</head>
+<body>
+    <h1>Ejercicio de descuentos con cupones</h1>
+
+    <form action="">
+        <fieldset>
+            <h2>Deberas ingresar el precio del producto y, ademas esta vez, seleccionar cupon de descuento</h2>
+            <label for="monto">Ingresar el monto</label>
+            <input type="number" id="monto" step="0.01">
+            <br><br>
+            <label for="cupones">Cupon de descuento</label>
+            <select name="cuponesDeDescuento" id="cupones">
+                <option selected value="0.1">10%</option>
+                <option value="0.16">16%</option>
+                <option value="0.24">24%</option>
+            </select>
+            <br><br>
+            <button type="button" onclick="calcularPrecio()">Calcular precio</button>
+            <h3 id="resultado"></h3>
+        </fieldset>
+    </form>
+    <script src="cupones.js"></script>
+</body>
+</html>
